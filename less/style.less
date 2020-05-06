@@ -1,0 +1,1285 @@
+// out: ../css/main.css
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+@yellow: #fbc605;
+@blue: #274599;
+@dark-blue: #002549;
+
+body {
+  font-family: Montserrat;
+}
+section {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  background: @blue;
+  padding: 25px auto;
+  max-width: 244px;
+  height: 64px;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  min-width: 244px;
+}
+h2 {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 180%;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+//НАЧАЛО - СЕКЦИЯ  offer*****************************************************
+
+section.offer {
+  padding-top: 40px;
+  padding-bottom: 8%;
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    .left {
+      width: 60%;
+      .logo_name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 90px;
+        h1 {
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 105%;
+          margin-left: 20px;
+          color: @blue;
+          letter-spacing: 20.5px;
+          span {
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 2px;
+          }
+        }
+      }
+      .tagline {
+        h2 {
+          font-style: normal;
+          font-weight: 200;
+          font-size: 45px;
+          //   width: 500px;
+          color: @blue;
+          line-height: 110%;
+          letter-spacing: -0.05em;
+          text-transform: uppercase;
+          margin-bottom: 70px;
+          b {
+            color: black;
+          }
+        }
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 145%;
+          color: @dark-blue;
+          max-width: 400px;
+          margin-bottom: 50px;
+          b {
+            color: black;
+          }
+        }
+      }
+      button {
+        margin-top: 50px;
+      }
+    }
+    .logo_pic {
+      display: none;
+    }
+    .right {
+      width: 40%;
+      padding: 70px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      color: @dark-blue;
+      h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 160%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .telephone {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 20px;
+        .phone {
+          font-weight: 700;
+          font-size: 22px;
+        }
+      }
+      .telephone::after {
+        content: url(../img/icons/icon_phone.svg);
+        position: absolute;
+        left: -45px;
+        top: -5px;
+      }
+      .data {
+        text-align: right;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 157%;
+        text-transform: uppercase;
+        margin-bottom: 220px;
+        span {
+          font-weight: 800;
+        }
+      }
+    }
+    .yellow {
+      position: absolute;
+      width: 55%;
+      height: 574px;
+      top: 200px;
+      right: 0;
+      //   transform: translate3d(100%, 25%, 10px);
+      background-color: @yellow;
+      clip-path: polygon(26% 0%, 100% 0%, 100% 100%, 0% 100%);
+      z-index: -1;
+    }
+    .center {
+      position: absolute;
+      transform: translate3d(30%, 0%, 10px);
+      z-index: -1;
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ offer*****************************************************
+
+//НАЧАЛО-  СЕКЦИЯ goals*****************************************************
+
+section.goals {
+  padding-top: 80px;
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    .wrap_img {
+      img {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        max-width: 570px;
+        width: 40%;
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 60%;
+      padding-left: 5%;
+      h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 40px;
+      }
+      .items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+        p {
+          font-size: 20px;
+          line-height: 180%;
+          width: 180px;
+          padding-top: 10px;
+          margin-right: 10px;
+          position: relative;
+        }
+        p:after {
+          content: url(../img/icons/border_yellow_black.svg);
+          position: absolute;
+          left: -5px;
+          top: -20px;
+        }
+      }
+    }
+    .yellow {
+      width: 305px;
+      height: 80px;
+      position: absolute;
+      left: 0px;
+      top: 25px;
+      background: #fbc605;
+      z-index: -1;
+    }
+  }
+}
+
+//КОНЕЦ -  СЕКЦИЯ goals*****************************************************
+
+//НАЧАЛО - СЕКЦИЯ  days*****************************************************
+
+section.days {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 30px;
+    .wrap {
+      position: relative;
+      margin: 0 auto;
+      h2 {
+        background-color: white;
+        margin-bottom: 70px;
+        padding: 25px 25px 0 25px;
+      }
+      .yellow_h {
+        position: absolute;
+        left: 78%;
+        top: 17px;
+        z-index: -1;
+        width: 115px;
+        height: 100px;
+        background-color: @yellow;
+      }
+    }
+
+    .first_day {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      padding-bottom: 60px;
+      .wrap_img_first {
+        display: none;
+      }
+      .info_day {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        .number_day {
+          position: relative;
+          h4 {
+            font-weight: bold;
+            font-size: 70px;
+            padding-left: 15px;
+            color: @dark-blue;
+            background-color: white;
+            margin-bottom: 25px;
+            span {
+              font-weight: 600;
+              font-size: 27px;
+              position: absolute;
+              top: 0;
+              left: 55px;
+            }
+          }
+          .yellow_numb {
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            z-index: -1;
+            width: 100px;
+            height: 100px;
+            background-color: @yellow;
+          }
+        }
+        p {
+          margin: 15px 15px 15px 50px;
+          line-height: 170%;
+          position: relative;
+          margin-bottom: 25px;
+        }
+        p::before {
+          position: absolute;
+          left: -80px;
+          top: -5px;
+        }
+        p:nth-child(2)::before {
+          content: url(../img/icons/time_clock-1.png);
+        }
+        p:nth-child(3)::before {
+          content: url(../img/icons/time_clock-2.png);
+        }
+        p:nth-child(4)::before {
+          content: url(../img/icons/time_clock-3.png);
+        }
+        p:nth-child(5)::before {
+          content: url(../img/icons/time_clock-4.png);
+        }
+        p:nth-child(6)::before {
+          content: url(../img/icons/time_clock-5.png);
+        }
+      }
+      img {
+        margin: 50px 30px;
+        width: 50%;
+        max-width: 585px;
+      }
+      .yellow_big {
+        position: absolute;
+        width: 473px;
+        height: 624px;
+        top: 170px;
+        right: 40px;
+        z-index: -1;
+        background-color: @yellow;
+      }
+      .quote {
+        position: absolute;
+        left: 145px;
+        max-width: 500px;
+        top: 650px;
+        .wrapper {
+          position: relative;
+          img {
+            width: 35%;
+            margin: 30px 0 0 0;
+          }
+          .title {
+            position: absolute;
+            top: 140px;
+            left: 30px;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 145%;
+            color: #525252;
+          }
+          .list {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 145%;
+            color: #525252;
+            margin-left: 55px;
+          }
+          .list:before {
+            content: url(../img/icons/square.jpg);
+            position: absolute;
+            left: 5px;
+          }
+        }
+      }
+    }
+    .secondary_day {
+      .first_day;
+      flex-direction: row-reverse;
+      position: relative;
+      margin-top: 50px;
+      .info_day {
+        .number_day {
+          h4 {
+            span {
+              left: 70px;
+            }
+          }
+        }
+      }
+      img {
+        margin: 20px 100px 0 -22px;
+      }
+      .yellow_big {
+        height: 450px;
+        top: -40px;
+        left: -120px;
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ  days*****************************************************
+
+//НАЧАЛО - СЕКЦИЯ you_can*****************************************************
+
+section.you_can {
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .wrapper_h {
+      align-self: flex-end;
+      margin-bottom: 35px;
+      width: 49%;
+      span {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 145%;
+        color: #000000;
+      }
+    }
+    .list_wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+      flex-wrap: wrap;
+      .item {
+        display: flex;
+        flex-direction: row;
+        width: 47%;
+        margin: 35px 10px;
+
+        .number_day {
+          position: relative;
+          h4 {
+            font-weight: bold;
+            font-size: 70px;
+            padding-left: 20px;
+            color: @dark-blue;
+            background-color: white;
+            margin-bottom: 25px;
+            width: 95px;
+            span {
+              font-weight: 600;
+              font-size: 27px;
+              position: absolute;
+              top: 0;
+              left: 55px;
+            }
+          }
+          .yellow_numb {
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            z-index: -1;
+            width: 90px;
+            height: 100px;
+            background-color: @yellow;
+          }
+        }
+        p {
+          font-weight: 300;
+          font-size: 23px;
+          line-height: 152.2%;
+          color: #000000;
+          b {
+            font-size: 27px;
+          }
+        }
+      }
+      .null {
+        opacity: 0;
+      }
+    }
+    .quote {
+      position: absolute;
+      left: 145px;
+      max-width: 500px;
+      top: -40px;
+      .wrapper {
+        position: relative;
+        img {
+          width: 35%;
+          margin: 30px 0 0 0;
+        }
+        .title {
+          position: absolute;
+          top: 140px;
+          left: 30px;
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 145%;
+          color: #525252;
+        }
+        .list {
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 145%;
+          color: #525252;
+          margin-left: 55px;
+        }
+        .list:before {
+          content: url(../img/icons/square.jpg);
+          position: absolute;
+          left: 5px;
+        }
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ  you_can*****************************************************
+
+//НАЧАЛО - СЕКЦИЯ price*****************************************************
+
+section.price {
+  padding: 40px 0px 80px 0px;
+  .container {
+    .wrap {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      h2 {
+        display: inline-block;
+        margin: 0 auto;
+        background-color: white;
+        margin-bottom: 30px;
+        padding: 25px 25px 0 25px;
+      }
+      .yellow_h {
+        position: absolute;
+        left: 30%;
+        top: 17px;
+        z-index: -1;
+        width: 115px;
+        height: 100px;
+        background-color: @yellow;
+      }
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f6f7f7;
+        width: 40%;
+        min-height: 420px;
+        margin: 30px;
+        padding-bottom: 50px;
+        border-radius: 20px;
+        .about {
+          color: black;
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 175%;
+          text-align: center;
+          background-color: #e9eaeb;
+          width: 100%;
+          padding: 20px;
+          border-radius: 20px 20px 0 0;
+        }
+        p {
+          color: black;
+          font-weight: bold;
+          font-size: 44px;
+          line-height: 175%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ price*****************************************************
+
+//НАЧАЛО - СЕКЦИЯ trainer*****************************************************
+
+section.trainer {
+  background-color: #f7f7f7;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .about_trainer {
+        width: 55%;
+        color: black;
+        padding: 70px 20px 30px 20px;
+        margin-right: 40px;
+        span {
+          display: inline-block;
+        }
+        .author {
+          font-weight: normal;
+          font-size: 20px;
+          letter-spacing: 0.155em;
+        }
+        h3 {
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 195%;
+        }
+        .more_about {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 140%;
+          margin: 20px 0;
+        }
+        .project {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 170%;
+          color: #525252;
+          margin-bottom: 20px;
+        }
+        p {
+          position: relative;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 170%;
+          color: #525252;
+          margin-bottom: 15px;
+          margin-left: 40px;
+        }
+        p:before {
+          content: url(../img/icons/check.svg);
+          position: absolute;
+          left: -40px;
+        }
+      }
+      .photo {
+        position: relative;
+        width: 45%;
+        z-index: 2;
+        margin-top: 75px;
+        .yellow {
+          position: absolute;
+          top: -50px;
+          right: -90px;
+          width: 445px;
+          height: 565px;
+          background-color: @yellow;
+          z-index: -1;
+        }
+      }
+    }
+    .center {
+      padding: 40px 20px 60px 20px;
+      width: 80%;
+      p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+        color: #000000;
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ  trainer***************************
+
+//НАЧАЛО - СЕКЦИЯ time ********************************
+
+section.time {
+  padding: 50px 0px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+      .photo {
+        background-image: url(../img/time1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        // margin: 0 30px 0 0;
+        width: 50%;
+        img {
+          display: none;
+        }
+      }
+      .text {
+        position: relative;
+        width: 45%;
+        margin-left: 5%;
+        .quote {
+          position: absolute;
+          left: 0px;
+          width: 100%;
+          top: 0px;
+          .wrap {
+            position: relative;
+            img {
+              width: 35%;
+              margin: 0px 0 0 0;
+            }
+            .title {
+              position: absolute;
+              top: 110px;
+              left: 30px;
+              font-weight: bold;
+              font-size: 40px;
+              line-height: 145%;
+              color: #525252;
+            }
+          }
+        }
+        .list {
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 145%;
+          color: #525252;
+          margin-left: 55px;
+          margin-top: 230px;
+          p {
+            margin-bottom: 40px;
+          }
+          p:before {
+            content: url(../img/icons/square.jpg);
+            position: absolute;
+            left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ  time *****************************
+
+//НАЧАЛО - СЕКЦИЯ time2 *******************************
+section.time2 {
+  padding: 50px 0px;
+  background-color: #eef0ef;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+      .photo {
+        background-image: url(../img/time2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        // margin: 0 30px 0 0;
+        width: 50%;
+        img {
+          display: none;
+        }
+      }
+      .text {
+        position: relative;
+        width: 45%;
+        margin-right: 5%;
+        .quote {
+          position: absolute;
+          left: 0px;
+          width: 100%;
+          top: 0px;
+          .wrap {
+            position: relative;
+            img {
+              width: 35%;
+              margin: 0px 0 0 0;
+            }
+            .title {
+              position: absolute;
+              top: 110px;
+              left: 30px;
+              font-weight: bold;
+              font-size: 40px;
+              line-height: 145%;
+              color: #525252;
+            }
+          }
+        }
+        .list {
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 145%;
+          color: #525252;
+          margin-left: 55px;
+          margin-top: 270px;
+          p {
+            margin-bottom: 40px;
+          }
+          p:before {
+            content: url(../img/icons/square.jpg);
+            position: absolute;
+            left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ  time2 ******************************
+
+//НАЧАЛО - СЕКЦИЯ  action*******************************
+section.action {
+  padding: 50px 0;
+  background-color: #fbc605;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    h2 {
+      margin-bottom: 20px;
+      b {
+        margin-left: 10px;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      input {
+        width: 20%;
+        min-width: 100px;
+        height: 64px;
+        background-color: #ffffff;
+        border-radius: 14px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 64px;
+        color: #959292;
+        border: none;
+        padding-left: 20px;
+        margin: 20px;
+      }
+      input.send {
+        background: @blue;
+        padding: 25px auto;
+        max-width: 244px;
+        height: 64px;
+        color: white;
+        border: none;
+        border-radius: 14px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 500;
+        min-width: 244px;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ   action******************************
+
+//НАЧАЛО - СЕКЦИЯ  lose*******************************
+section.lose {
+  .container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .wrapper_h {
+      margin-bottom: 75px;
+      width: 100%;
+      text-align: center;
+      span {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 145%;
+        color: #000000;
+      }
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+      .left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 45%;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 27px;
+        line-height: 33px;
+        color: #000000;
+        background-color: white;
+        margin-bottom: 70px;
+        .yellow {
+          top: 3px;
+          position: absolute;
+          width: 481px;
+          height: 385px;
+          right: -40px;
+          bottom: -21px;
+          background: #fbc605;
+          z-index: -1;
+        }
+        p {
+          margin-bottom: 25px;
+        }
+        p:nth-child(1) {
+          transform: rotate(-20deg) translate(-100px, 15px);
+        }
+        p:nth-child(2) {
+          transform: rotate(-4.32deg) translate(120px, 5px);
+        }
+        p:nth-child(3) {
+          transform: rotate(0deg) translate(-110px, 25px);
+        }
+        p:nth-child(4) {
+          transform: rotate(25deg) translate(110px, -20px);
+        }
+        p:nth-child(5) {
+          transform: rotate(-25deg) translate(-80px, -20px);
+        }
+        p:nth-child(6) {
+          transform: translate(0px, 20px);
+        }
+      }
+      .right {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+        width: 280px;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 27px;
+        line-height: 33px;
+        color: #000000;
+        background-color: white;
+        margin-bottom: 70px;
+        padding: 15px 0 0 0px;
+        p {
+          margin-bottom: 10px;
+          position: relative;
+          &:before {
+            content: url(../img/icons/check.svg);
+            position: absolute;
+            top: 0px;
+            left: -50px;
+          }
+        }
+      }
+      .left:before {
+        content: url(../img/icons/border_yellow_black.svg);
+        position: absolute;
+        top: -40px;
+        left: 47%;
+      }
+      .right:before {
+        content: url(../img/icons/border_yellow_black.svg);
+        position: absolute;
+        top: -40px;
+        left: 45px;
+      }
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
+}
+
+//КОНЕЦ -  СЕКЦИЯ  lose ******************************
+
+//НАЧАЛО - СЕКЦИЯ gallery *******************************
+section.gallery {
+  .container {
+    max-width: 1440px;
+    position: relative;
+    margin-bottom: 50px;
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .mobile {
+      display: none;
+    }
+    .slider {
+      img {
+        margin: 20px;
+        max-height: 400px;
+      }
+      .translate1 {
+        transform: translateY(-30px);
+      }
+      .translate2 {
+        transform: translateY(10px);
+      }
+      button {
+        width: 25px;
+        height: 25px;
+        background: #264088;
+        color: #264088;
+        border-radius: 4px;
+        min-width: 25px;
+      }
+      li {
+        list-style-type: none;
+        margin: 3px !important;
+      }
+      .slick-dots {
+        display: flex;
+        margin-left: 20%;
+      }
+      li.slick-active {
+        opacity: 0.5;
+      }
+    }
+    .yellow1 {
+      position: absolute;
+      width: 30%;
+      height: 61%;
+      left: 190px;
+      top: 120px;
+      background: #fbc605;
+      z-index: -1;
+    }
+    .yellow2 {
+      position: absolute;
+      width: 30%;
+      height: 61%;
+      right: 33px;
+      top: 250px;
+      background: #fbc605;
+      z-index: -1;
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ   gallery ******************************
+
+//НАЧАЛО - СЕКЦИЯ  write *******************************
+section.write {
+  padding: 70px 0;
+  background-image: url(../img/fon_send.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      input {
+        width: 50%;
+        min-width: 250px;
+        height: 56px;
+        background-color: #ffffff;
+        border-radius: 14px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 64px;
+        color: #959292;
+        border: none;
+        padding: 0 20px;
+        margin: 20px;
+      }
+      .question {
+        width: 50%;
+        min-width: 250px;
+        height: 170px;
+        background-color: #ffffff;
+        border-radius: 14px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #959292;
+        border: none;
+        padding: 20px;
+        margin: 20px;
+      }
+      input.send {
+        background: @blue;
+        padding: 25px auto;
+        max-width: 244px;
+        height: 64px;
+        color: white;
+        border: none;
+        border-radius: 14px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 500;
+        min-width: 244px;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ  write  ******************************
+
+//НАЧАЛО - СЕКЦИЯ   footer *******************************
+footer {
+  min-height: 150px;
+  background-color: #fbc605;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 20px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 224.19%;
+      color: #ffffff;
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+//КОНЕЦ -  СЕКЦИЯ  footer  ******************************
+
+//НАЧАЛО  -  СЕКЦИЯ  modal  ******************************
+
+.cover {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.boxForm {
+  background: #f0f0f0;
+  border-radius: 6px;
+  position: absolute;
+  left: 33%;
+  top: 33%;
+  width: 33%;
+  z-index: 2;
+}
+.close {
+  background: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  color: black;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+.form_style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  input {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 5px 15px;
+    margin: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .send {
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    margin: 10px;
+    background-color: #264088;
+    border-radius: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: #ffffff;
+  }
+  .check_input{
+    width: 25px;
+    height: 25px;
+  }
+  .remodal-close{
+    display: none;
+  }
+  .modal_pay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pdoform_h1{
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+}
+
+//КОНЕЦ -  СЕКЦИЯ  modal  ******************************
+
+//НАЧАЛО - remodal pay  ******************************
+
+.remodal {
+  display: none;
+}
+//КОНЕЦ -  remodal pay ******************************

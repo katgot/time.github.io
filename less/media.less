@@ -1,0 +1,1070 @@
+// out: ../css/media.css
+
+@yellow: #fbc605;
+@blue: #274599;
+@dark-blue: #002549;
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ  offer *****************************************************
+@media (max-width: 1170px) {
+  section.offer {
+    padding-bottom: 3%;
+    .container {
+      flex-wrap: wrap;
+      .left {
+        width: 50%;
+        padding-left: 50px;
+        button {
+          margin-top: 10px;
+        }
+      }
+      .logo_pic {
+        display: block;
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      .right {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        background-color: @yellow;
+        padding: 20px 30px;
+        margin: 20px 0;
+        h3 {
+          margin: 0 15px;
+          font-size: 30px;
+        }
+        .data {
+          text-align: center;
+          margin: 0 15px;
+        }
+        .telephone {
+          margin: 0 15px 0 50px;
+        }
+      }
+      .yellow {
+        display: none;
+      }
+      .center {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  section.offer {
+    .container {
+      .left {
+        padding-left: 20px;
+        .logo_name {
+          margin-bottom: 50px;
+        }
+        .tagline {
+          h2 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  section.offer {
+    .container {
+      flex-wrap: no-wrap;
+      position: relative;
+      padding-top: 120px;
+      .left {
+        // width: 100%;
+        padding: 50px 30px 50px 20px;
+        .logo_name {
+          position: absolute;
+          // width: 100%;
+          // margin: 0 auto;
+          top: 10px;
+          left: 25%;
+          margin-bottom: 50px;
+        }
+        .tagline {
+          h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .logo_pic {
+        // width: 100%;
+        background-image: url(../img/trainer_offer.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 0%;
+        img {
+          display: none;
+        }
+      }
+      .right {
+        h3 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  section.offer {
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 0px;
+      .left {
+        width: 100%;
+        padding: 0px 30px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo_name {
+          position: static;
+          justify-content: center;
+          margin-bottom: 30px;
+          text-align: center;
+          h1 {
+            margin-left: 5px;
+            letter-spacing: 12.5px;
+            span {
+              font-size: 38px;
+            }
+          }
+        }
+        .tagline {
+          text-align: center;
+          p {
+            max-width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .logo_pic {
+        width: 100%;
+        background: none;
+        img {
+          display: block;
+        }
+      }
+      .right {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  section.offer .container .right {
+    width: 100%;
+    flex-direction: column;
+    .data {
+      display: flex;
+      flex-direction: row;
+      p {
+        margin: 0 10px 20px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  section.offer .container {
+    .left {
+      .tagline {
+        h2 {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+    }
+    .right {
+      // width: 100%;
+      // flex-direction: column;
+      .data {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        margin-bottom: 15px;
+        p {
+          margin: 0;
+        }
+      }
+      .telephone {
+        margin: 0 0px 0 30px;
+        .phone {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+//КОНЕЦ - MEDIA  - СЕКЦИЯ offer *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ  goals *****************************************************
+@media (max-width: 1200px) {
+  section.goals {
+    .container {
+      .wrapper {
+        h2 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1075px) {
+  section.goals {
+    .container {
+      align-items: stretch;
+      padding: 0;
+      .wrap_img {
+        img {
+          display: none;
+        }
+        background-image: url(../img/darts.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 40%;
+      }
+      .wrapper {
+        h2 {
+          font-size: 32px;
+        }
+        .items {
+          p {
+            font-size: 18px;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 950px) {
+  section.goals {
+    padding: 30px 0;
+    .container {
+      padding: 0 15px;
+      .wrap_img {
+        display: none;
+      }
+      .yellow {
+        display: none;
+      }
+      .wrapper {
+        width: 100%;
+        h2 {
+          font-size: 40px;
+          margin: 0 auto;
+          margin-bottom: 40px;
+        }
+        .items {
+          p {
+            font-size: 24px;
+            margin-right: 20px;
+            width: 210px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  section.goals {
+    .container {
+      .wrapper {
+        width: 100%;
+        h2 {
+          text-align: center;
+          // font-size: 40px;
+          // margin: 0 auto;
+          // margin-bottom: 40px;
+        }
+        .items {
+          flex-direction: column;
+          p {
+            font-size: 24px;
+            margin-right: 0px;
+            margin-bottom: 30px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  section.goals .container .wrapper {
+    h2 {
+      font-size: 30px;
+    }
+    .items p {
+      font-size: 20px;
+    }
+  }
+}
+
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  goals *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ days *****************************************************
+@media (max-width: 1180px) {
+  section.days {
+    margin-top: 30px;
+    .container {
+      .first_day {
+        .info_day {
+          padding-left: 20px;
+        }
+        .wrap_img_first {
+          display: block;
+          background-image: url(../img/first_day.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          width: 50%;
+          margin: 0px 0px 0px 30px;
+        }
+        img {
+          display: none;
+        }
+        .yellow_big {
+          display: none;
+        }
+        .quote {
+          display: none;
+        }
+      }
+      .secondary_day {
+        .info_day {
+          padding-left: 20px;
+        }
+        .wrap_img_secondary {
+          display: block;
+          background-image: url(../img/secondary_day.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 100% 50%;
+          width: 50%;
+          margin: 0px 30px 0px 0px;
+        }
+        img {
+          display: none;
+        }
+        .yellow_big {
+          display: none;
+        }
+        .quote {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  section.days {
+    margin-top: 0px;
+    .container {
+      .first_day {
+        flex-direction: column;
+        padding-bottom: 20px;
+        .info_day {
+          width: 100%;
+          padding-left: 20px;
+        }
+        .wrap_img_first {
+          display: none;
+        }
+        img {
+          display: block;
+          width: 100%;
+          margin: 30px 0;
+        }
+      }
+      .secondary_day {
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-top: 30px;
+        .info_day {
+          width: 100%;
+          padding-left: 20px;
+        }
+        .wrap_img_secondary {
+          display: none;
+        }
+        img {
+          display: block;
+          width: 100%;
+          margin: 30px 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  section.days .container .wrap {
+    h2 {
+      text-align: center;
+      padding-bottom: 20px;
+      b {
+        border-bottom: 15px solid @yellow;
+        padding-bottom: 10px;
+      }
+    }
+    .yellow_h {
+      display: none;
+    }
+  }
+}
+
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  days *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ you_can *****************************************************
+@media (max-width: 1300px) {
+  section.you_can .container .quote {
+    left: 45px;
+  }
+}
+
+@media (max-width: 1100px) {
+  section.you_can .container .quote {
+    display: none;
+  }
+  section.you_can {
+    .container {
+      .wrapper_h {
+        align-self: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          border-bottom: 15px solid @yellow;
+          text-align: center;
+        }
+        span {
+          font-size: 24px;
+        }
+      }
+      .list_wrap {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .null {
+          display: none;
+        }
+        .item {
+          width: 90%;
+          padding-left: 7%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  section.you_can {
+    .container {
+      .wrapper_h {
+        margin-bottom: 20px;
+      }
+      .list_wrap {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .null {
+          display: none !important;
+        }
+        .item {
+          width: 100%;
+          padding-left: 0%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 10px 0;
+          p {
+            text-align: center;
+            b {
+              font-size: 22px;
+            }
+          }
+          .number_day {
+            h4 {
+              font-weight: bold;
+              font-size: 70px;
+              padding-left: 20px;
+              padding-right: 20px;
+              background-color: white;
+              width: auto;
+              color: #fbc605;
+            }
+            .yellow_numb {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  you_can *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ price *****************************************************
+@media (max-width: 1180px) {
+  section.price .container .wrap {
+    h2 {
+      text-align: center;
+      border-bottom: 15px solid @yellow;
+    }
+    .yellow_h {
+      display: none;
+    }
+  }
+}
+@media (max-width: 960px) {
+  section.price .container .wrapper {
+    flex-direction: column;
+    align-items: center;
+    .card {
+      width: 60%;
+    }
+  }
+}
+@media (max-width: 700px) {
+  section.price .container .wrapper {
+    .card {
+      width: 80%;
+      p {
+        font-size: 38px;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  section.price .container .wrapper {
+    .card {
+      width: 100%;
+    }
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  price *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ trainer *****************************************************
+@media (max-width: 1100px) {
+  section.trainer {
+    .container {
+      .wrapper {
+        align-items: stretch;
+        .about_trainer {
+          h3 {
+            display: inline-block;
+            border-bottom: 15px solid @yellow;
+            font-size: 36px;
+          }
+        }
+        .photo {
+          background-image: url(../img/trainer.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 40% 50%;
+          width: 50%;
+          img {
+            display: none;
+          }
+          .yellow {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  section.trainer {
+    .container {
+      .wrapper {
+        flex-direction: column;
+        align-items: center;
+        .about_trainer {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          margin: 0;
+          .author {
+            align-self: center;
+            text-align: center;
+          }
+          h3 {
+            align-self: center;
+            display: inline-block;
+            border-bottom: 15px solid @yellow;
+            font-size: 36px;
+          }
+        }
+        .photo {
+          background: none;
+          // background-image: url(../img/trainer.jpg);
+          // background-repeat: no-repeat;
+          // background-size: cover;
+          // background-position: 40% 50%;
+          width: 100%;
+          margin: 0;
+          img {
+            display: block;
+            width: 100%;
+          }
+          .yellow {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  section.trainer .container {
+    .wrapper .about_trainer h3 {
+      align-self: center;
+      border-bottom: 15px solid #fbc605;
+      font-size: 32px;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .center {
+      width: 100%;
+    }
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  trainer *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ time **************************************
+
+@media (max-width: 940px) {
+  section.time .container .wrapper .text .list {
+    margin-top: 250px;
+  }
+}
+@media (max-width: 700px) {
+  section.time .container .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .photo {
+      width: 100%;
+      background: none;
+      margin-bottom: 20px;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .text {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  section.time .container .wrapper .text .quote .wrap img {
+    width: 190px;
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ time  *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ time2 *****************************************************
+@media (max-width: 940px) {
+  section.time2 .container .wrapper .text {
+    .quote .wrap {
+      span.title {
+        top: 80px;
+      }
+    }
+    .list {
+      margin-top: 280px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  section.time2 .container .wrapper .text .quote .wrap span.title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 700px) {
+  section.time2 .container .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .photo {
+      width: 100%;
+      background: none;
+      margin-bottom: 20px;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .text {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  section.time2 .container .wrapper .text .quote .wrap img {
+    width: 190px;
+  }
+}
+
+@media (max-width: 650px) {
+  section.time2 .container .wrapper .text .list {
+    margin-top: 240px;
+  }
+}
+@media (max-width: 375px) {
+  section.time2 .container .wrapper .text .list {
+    margin-top: 260px;
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  time2 *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ action *****************************************************
+@media (max-width: 950px) {
+  section.action {
+    .container {
+      h2 {
+        b {
+          display: block;
+        }
+      }
+      form {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  section.action {
+    .container {
+      h2 {
+        font-size: 36px;
+        text-align: center;
+      }
+      form {
+        width: 80%;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  section.action {
+    .container {
+      h2 {
+        font-size: 29px;
+        text-align: center;
+      }
+      form {
+        width: 90%;
+      }
+    }
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ action  *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ lose *****************************************************
+@media (max-width: 950px) {
+  section.lose {
+    .container {
+      .wrapper_h {
+        h2 {
+          font-size: 38px;
+        }
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .left {
+          width: 400px;
+          margin-bottom: 0;
+          padding: 0 50px 15px 0;
+          border-bottom: 25px solid @yellow;
+          border-right: 25px solid @yellow;
+          .yellow {
+            display: none;
+          }
+        }
+        .left:before {
+          left: 43%;
+        }
+        .right {
+          margin-top: 120px;
+          width: 160px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  section.lose {
+    .container {
+      .wrapper_h {
+        h2 {
+          font-size: 34px;
+        }
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .left {
+          transform: scale(0.73);
+        }
+        .right {
+          margin-top: 80px;
+          margin-bottom: 30px;
+          p {
+            font-size: 24px;
+          }
+        }
+        .right:before {
+          left: 25px;
+        }
+      }
+    }
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  lose *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ gallery *****************************************************
+@media (max-width: 1000px) {
+  section.gallery .container {
+    display: flex;
+    flex-direction: column;
+    .yellow1 {
+      display: none;
+    }
+    .yellow2 {
+      display: none;
+    }
+    h2 {
+      display: inline-block;
+      width: auto;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      border-bottom: 15px solid #fbc605;
+    }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      .gallery1 {
+        background-image: url(../img/gallery1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 00% 50%;
+        height: 350px;
+        border: 15px solid white;
+      }
+      .gallery2 {
+        background-image: url(../img/gallery2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 350px;
+        border: 15px solid white;
+      }
+      .gallery3 {
+        background-image: url(../img/gallery3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 350px;
+        border: 15px solid white;
+      }
+      .gallery4 {
+        background-image: url(../img/gallery4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 350px;
+        border: 15px solid white;
+      }
+    }
+    .slider {
+      .translate1 {
+        transform: translateY(0px);
+      }
+      .translate2 {
+        transform: translateY(0px);
+      }
+      img {
+        height: 300px;
+      }
+      .slick-dots {
+        margin-left: 42%;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  section.gallery .container {
+    h2 {
+      font-size: 34px;
+    }
+    .slider .slick-dots {
+      margin-left: 36%;
+    }
+  }
+}
+@media (max-width: 650px) {
+  section.gallery .container {
+    .slider .slick-dots {
+      margin-left: 34%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  section.gallery .container h2 {
+    font-size: 26px;
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ gallery *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ write *****************************************************
+
+@media (max-width: 770px) {
+  section.write {
+    .container {
+      form {
+        input {
+          width: 70%;
+        }
+        .question {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  section.write {
+    .container {
+      form {
+        input {
+          width: 80%;
+        }
+        .question {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  section.write {
+    .container {
+      h2 {
+        font-size: 34px;
+        margin-bottom: 20px;
+      }
+      form {
+        input {
+          width: 90%;
+        }
+        .question {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  write *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ footer *****************************************************
+@media (max-width: 950px) {
+  footer {
+    .container {
+      justify-content: center;
+      flex-wrap: wrap;
+      .wrap {
+        margin: 10px 30px;
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  footer {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 410px) {
+  footer {
+    .container {
+      .wrap {
+        margin: 0px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  footer *****************************************************
+
+//НАЧАЛО - MEDIA  - СЕКЦИЯ modal *****************************************************
+@media (max-width: 900px) {
+  .boxForm {
+    left: 25%;
+    top: 25%;
+    width: 50%;
+  }
+}
+@media (max-width: 770px) {
+  .boxForm {
+    left: 20%;
+    top: 20%;
+    width: 60%;
+  }
+}
+@media (max-width: 625px) {
+  .boxForm {
+    left: 10%;
+    top: 20%;
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .boxForm {
+    left: 5%;
+    top: 10%;
+    width: 90%;
+  }
+  .form_style {
+    padding: 35px 20px;
+  }
+}
+//КОНЕЦ - MEDIA  - СЕКЦИЯ  modal *****************************************************
